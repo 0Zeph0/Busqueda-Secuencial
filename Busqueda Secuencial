@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+
+int busquedaSecuencial(int lista[], int tam, int dato);
+
+int main()
+{
+    int dato;
+    int listica[5] = {2,5,3,4,6};
+    cin >> dato;
+    cout << busquedaSecuencial(listica, 5, dato);
+
+    return 0;
+}
+int busquedaSecuencial(int lista[], int tam, int dato){
+
+    for(int i = 0; i <= tam; i++){
+        if(lista[i] == dato){
+
+            return i;
+            break;
+        }
+        else return -1;
+    }
+}
