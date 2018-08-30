@@ -1,2 +1,2 @@
-# Busqueda-Secuencial
-Codigo de Bsuqueda Secuencial
+# Códigos de busqueda
+Codigos de busqueda de Datos 2
