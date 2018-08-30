@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+//La mae agarra la lista ya ordenada.
+int busquedaBinaria(int lista[], int tam, int dato);
+
+int main()
+{
+    int listaordenada[10] = {2,3,4,5,6,7,8,9,10,11};
+
+    int dato;
+    cin >> dato;
+    cout << busquedaBinaria(listaordenada, 10, dato);
+    return 0;
+}
+
+int busquedaBinaria(int lista[], int tam, int dato){
+    int centro, inf = 0 , sup = tam-1;
+    while( inf <= sup){
+        cout << "entra";
+        centro = ((sup - inf)/ 2);
+        if (dato == lista[centro]){
+            
+            return centro;
+        }
+        else if (lista[centro] > dato){
+            
+            sup = centro - 1;
+        }
+        else
+            
+            inf = centro + 1;
+    }
+    return -1;
+}
